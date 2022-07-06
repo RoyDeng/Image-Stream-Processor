@@ -1,0 +1,22 @@
+version: "3.1"
+
+services:
+  api:
+    build: ./api
+    container_name: image_processor_api
+    ports:
+      - "3000:3000"
+    environment:
+      - TZ=Asia/Taipei
+    command: bash -c "npm run test && node server"
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    restart: always
+    networks:
+      - image-processor
+
+networks:
+  image-processor:
+    external: true
