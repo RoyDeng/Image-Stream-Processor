@@ -1,6 +1,6 @@
 # Image-Stream-Processor
 
-A simple api to flipp images horizontally and vertically.
+A simple api to flip images horizontally and vertically.
 
 ## How To Build
 
