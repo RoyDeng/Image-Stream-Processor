@@ -1,0 +1,31 @@
+{
+  "name": "image-stream-processor",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.7.4"
+  },
+  "description": "A simple api to flip images horizontally and vertically.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoyDeng/Image-Stream-Processor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RoyDeng/Image-Stream-Processor/issues"
+  },
+  "homepage": "https://github.com/RoyDeng/Image-Stream-Processor#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "jimp": "^0.16.1",
+    "ts-command-line-args": "^2.3.1"
+  }
+}
