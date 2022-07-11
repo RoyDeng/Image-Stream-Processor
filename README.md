@@ -1,26 +1,17 @@
 # Image-Stream-Processor
 
-A simple api to flip images horizontally and vertically.
+A simple program to flip images horizontally and vertically.
 
-## How To Build
-
-```
-docker network create image-processor
-
-docker-compose up -d
-```
-
-## How To Test API
+## How To Run
 
 ```
-curl -H "Content-type: application/json" -d '{
-    "type": "flip",
-    "url": "https://www.ui.com/microsite/static/media/app-world-diagram.ac485e5a.jpg"
-}' 'http://localhost:3000/image/process'
+npm i
+
+npm run build
+
+mkdir dist/images
+
+node --max-old-space-size=100 dist/index.js --link=https://tw.ui.com/microsite/static/media/software-protect.mp4.96d4de95.jpg
 ```
 
-## Architecture
-
-![Architecture](./doc/architecture.png)
-
-###### 標籤: `Node.js` `Koa` `Interview`
+###### 標籤: `Node.js` `TypeScript` `Interview`
